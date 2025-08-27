@@ -1,4 +1,7 @@
 {
+  "name": "hairday",
+  "description": "Aplicação WEB para agendamentos de cortes de cabelo.",
+  "author": "Lucas Garcia e Silva",
   "scripts": {
     "server": "json-server --watch server.json --port 3333"
   },
