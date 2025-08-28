@@ -6,3 +6,6 @@ import "./libs/dayjs.js";
 import "./styles/global.css";
 import "./styles/form.css";
 import "./styles/schedule.css";
+
+// Importação de todos os JS
+import "./modules/form/submit.js";
