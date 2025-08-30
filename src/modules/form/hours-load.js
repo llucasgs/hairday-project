@@ -37,6 +37,9 @@ export function hoursLoad({ date }) {
 
     hours.append(li);
   });
+
+  // Adiciona o evento de clique nos horários disponíveis
+  hoursClick();
 }
 
 // Separando os horários pelo período
