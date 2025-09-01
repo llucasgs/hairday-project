@@ -16,3 +16,14 @@ form.onsubmit = (event) => {
   // Previne o comportamento padrão de carregar a página.
   event.preventDefault();
 };
+
+//Torna toda a div, inclusive o input dentro, clicável
+const divInputDate = document.querySelector("div .input");
+
+divInputDate.addEventListener("click", () => {
+  if (selectedDate.showPicker) {
+    selectedDate.showPicker(); // abre o seletor de data (Chrome, Edge, etc.)
+  } else {
+    selectedDate.focus(); // fallback para navegadores que não suportam showPicker
+  }
+});
