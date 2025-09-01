@@ -14,7 +14,7 @@
   });
 }*/
 
-//Opção mais aprimorada com a função de clicar denovo e remover o evento.
+//Opção mais aprimorada com a função de clicar novamente e remover o evento.
 export function hoursClick() {
   const hours = document.querySelectorAll(".hour-available");
 
