@@ -1,5 +1,7 @@
 import dayjs from "dayjs";
 
+import { scheduleNew } from "../../services/schedule-new.js";
+
 const form = document.querySelector("form");
 
 //Torna toda a div, inclusive o input dentro, clicável
@@ -25,7 +27,7 @@ selectedDate.value = inputToday;
 // Define a data mínima como sendo a data atual.
 selectedDate.min = inputToday;
 
-form.onsubmit = (event) => {
+form.onsubmit = async (event) => {
   // Previne o comportamento padrão de carregar a página.
   event.preventDefault();
 
@@ -51,7 +53,7 @@ form.onsubmit = (event) => {
     //Gera um ID para termos um identificador de cada submit de agendamento
     const id = new Date().getTime();
 
-    console.log({
+    await scheduleNew({
       id,
       name,
       when,
