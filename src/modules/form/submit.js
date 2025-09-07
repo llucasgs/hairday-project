@@ -25,7 +25,7 @@ const inputToday = dayjs(new Date()).format("YYYY-MM-DD");
 selectedDate.value = inputToday;
 
 // Define a data mínima como sendo a data atual.
-selectedDate.min = inputToday;
+// selectedDate.min = inputToday;
 
 form.onsubmit = async (event) => {
   // Previne o comportamento padrão de carregar a página.
