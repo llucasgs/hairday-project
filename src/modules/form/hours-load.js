@@ -6,9 +6,14 @@ import { openingHours } from "../../utils/opening-hours.js";
 
 const hours = document.getElementById("hours");
 
-export function hoursLoad({ date }) {
+export function hoursLoad({ date, dailySchedules }) {
   // Limpa a lista de horários primeiro.
   hours.innerHTML = "";
+  // Obtém a lista de horários ocupados.
+  const unavailableHours = dailySchedules.map((schedule) =>
+    dayjs(schedule.when).format("HH:mm")
+  );
+
   const opening = openingHours.map((hour) => {
     // Recupera somente a hora com uma desestruturação.
     const [scheduleHour] = hour.split(":");
@@ -16,10 +21,12 @@ export function hoursLoad({ date }) {
     // Adiciona a hora na data e verifica se está no passado. Se sim, precisamos bloquear para o usuário não conseguir usar.
     const isHourFuture = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs());
 
+    const available = !unavailableHours.includes(hour) && isHourFuture;
+
     // Define se o horário está disponível.
     return {
       hour,
-      available: isHourFuture,
+      available,
     };
   });
 
