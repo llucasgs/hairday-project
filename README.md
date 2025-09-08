@@ -16,37 +16,4 @@ Os horários funcionam dinâmicamente, ou seja, ficam indisponíveis se já pass
 
 ## :camera: Foto do projeto
 
-```markdown
-![Hair Day Preview](./src/assets/hair-day-project.png)
-```
-
-## :open_file_folder: Estrutura de pastas
-
-src/
-├── assets/ # Arquivos estáticos (imagens, ícones, etc.)
-├── libs/ # Bibliotecas auxiliares
-│ └── dayjs.js
-├── modules/ # Módulos principais da aplicação
-│ ├── form/
-│ │ ├── date-change.js
-│ │ ├── hours-click.js
-│ │ ├── hours-load.js
-│ │ └── submit.js
-│ ├── schedules/
-│ │ ├── cancel.js
-│ │ ├── load.js
-│ │ └── show.js
-│ └── page-load.js
-├── services/ # Serviços para comunicação com API
-│ ├── api-config.js
-│ ├── schedule-cancel.js
-│ ├── schedule-fetch-by-day.js
-│ └── schedule-new.js
-├── styles/ # Estilos CSS
-│ ├── form.css
-│ ├── global.css
-│ └── schedule.css
-├── utils/ # Funções auxiliares
-│ └── opening-hours.js
-├── main.js
-└── index.html
+<img src="./src/assets/hair-day-project.png" alt="Foto do projeto" />
