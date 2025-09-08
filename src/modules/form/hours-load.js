@@ -39,7 +39,7 @@ export function hoursLoad({ date, dailySchedules }) {
 
     li.textContent = hour;
 
-    if (hour === "8:00") {
+    if (hour === "08:00") {
       hourHeaderAdd("Manhã");
     } else if (hour === "12:00") {
       hourHeaderAdd("Tarde");

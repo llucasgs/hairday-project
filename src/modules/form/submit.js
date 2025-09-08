@@ -48,15 +48,16 @@ form.onsubmit = async (event) => {
     //Recuperando apenas a hora do horário
     const [hour] = hourSelected.innerText.split(":");
 
-    //Inserindo a hora na data
+    /*Inserindo a hora na data
     const when = dayjs(selectedDate.value).add(hour, "hour");
-
-    //Gera um ID para termos um identificador de cada submit de agendamento
-    const id = new Date().getTime();
+    Do jeito acima, o front entende, mas o server.json salva o UTC cru, ou seja, fica 3h a mais na API  
+    */
+    const when = dayjs(`${selectedDate.value} ${hour}:00`).format(
+      "YYYY-MM-DD HH:mm"
+    );
 
     // Faz o agendamento (envia os dados para a API).
     await scheduleNew({
-      id,
       name,
       when,
     });

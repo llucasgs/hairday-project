@@ -39,7 +39,7 @@ export function scheduleShow({ dailySchedules }) {
       // Renderizando o agendamento nas sessões (manhã, tarde, noite) de forma condicional.
       if (hour <= 11) {
         periodMorning.appendChild(item);
-      } else if (hour > 12 && hour <= 17) {
+      } else if (hour >= 12 && hour <= 17) {
         periodAfternoon.appendChild(item);
       } else {
         periodNight.appendChild(item);
