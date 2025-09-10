@@ -20,7 +20,7 @@ Os horários funcionam dinâmicamente, ou seja, ficam indisponíveis se já pass
 
 ## :bulb: Como testar o projeto
 
-**1. Ter o Git instalado em sua máquina;**
+**1. Ter o Git instalado em sua máquina;**</br>
 **2. Clonar o repositório usando um terminal;**
 
 ```bash
