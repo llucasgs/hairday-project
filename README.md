@@ -21,7 +21,7 @@ Os horários funcionam dinâmicamente, ou seja, ficam indisponíveis se já pass
 ## :bulb: Como testar o projeto
 
 **1. Ter o Git instalado em sua máquina;**</br>
-**2. Clonar o repositório usando um terminal;**
+**2. Clonar o repositório usando um terminal:**
 
 ```bash
 git clone https://github.com/llucasgs/hairday-project.git
@@ -29,20 +29,20 @@ git clone https://github.com/llucasgs/hairday-project.git
 
 Isso vai criar uma pasta com o nome do repositório. Então, abra a pasta dentro do editor de código **VS Code.**
 
-**3. Instale as dependências do projeto;**
+**3. Instale as dependências do projeto:**
 
 ```bash
 npm install
 ```
 
-**4. Use os comandos abaixo para:**
-4.1. Rodar a API json server
+**4. Use os comandos abaixo para:**</br>
+4.1. Rodar a API json server;
 
 ```bash
 npm run server
 ```
 
-4.2. Rodar o servidor local (Webpack Dev Server) e testar a aplicação
+4.2. Rodar o servidor local (Webpack Dev Server) e testar a aplicação.
 
 ```bash
 npm run dev
